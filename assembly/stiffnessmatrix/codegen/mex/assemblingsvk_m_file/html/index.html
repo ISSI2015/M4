@@ -1,0 +1,693 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file/html/index.css" />
+
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////home/ksimon/Software/Matlab/matlabR2013a/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarHere: "Information for the selected variable:",
+    infoForVarThere: "Information for the selected variable:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "assemblingSVK_m_file1_mcode.html",
+ fpath1: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines1: [1, 2, 33],
+ watch1: "assemblingSVK_m_file1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file</a></span>",
+ tcall1: [  ],
+ scall1: [ [ "From line 4 to assemblingSVK_m_file > getGlobalPositions", "6#srcline155" ], [ "From line 20 to assemblingSVK_m_file > giveGradient", "130#srcline108" ], [ "From line 21 to assemblingSVK_m_file > giveSigma", "143#srcline136" ], [ "From line 23 to assemblingSVK_m_file > localAssemblingSVK", "229#srcline79" ], [ "From line 24 to assemblingSVK_m_file > localAssemblingF", "268#srcline33" ] ],
+ MATLABcode6: "getGlobalPositions6_mcode.html",
+ fpath6: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines6: [153, 155, 163],
+ watch6: "getGlobalPositions6_watch.html",
+ title6: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; getGlobalPositions</a></span>",
+ tcall6: [ [ "From assemblingSVK_m_file line 4", "1#F6N3:B21" ] ],
+ scall6: [  ],
+ MATLABcode50: "invertBlock2by250_mcode.html",
+ fpath50: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines50: [255, 269, 281],
+ watch50: "invertBlock2by250_watch.html",
+ title50: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; invertBlock2by2</a></span>",
+ tcall50: [ [ "From assemblingSVK_m_file > giveGradient line 115", "130#F50N8:B683" ] ],
+ scall50: [  ],
+ MATLABcode51: "makeBlockDiag2by251_mcode.html",
+ fpath51: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines51: [280, 281, 290],
+ watch51: "makeBlockDiag2by251_watch.html",
+ title51: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 1</a></span>",
+ tcall51: [ [ "From assemblingSVK_m_file > giveGradient line 120", "130#F51N11:B689" ] ],
+ scall51: [  ],
+ MATLABcode130: "giveGradient130_mcode.html",
+ fpath130: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines130: [106, 108, 136],
+ watch130: "giveGradient130_watch.html",
+ title130: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; giveGradient</a></span>",
+ tcall130: [ [ "From assemblingSVK_m_file line 20", "1#F130N5:B256" ] ],
+ scall130: [ [ "From line 115 to assemblingSVK_m_file > invertBlock2by2", "50#srcline269" ], [ "From line 120 to assemblingSVK_m_file > makeBlockDiag2by2 > 1", "51#srcline281" ] ],
+ MATLABcode143: "giveSigma143_mcode.html",
+ fpath143: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines143: [134, 136, 155],
+ watch143: "giveSigma143_watch.html",
+ title143: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; giveSigma</a></span>",
+ tcall143: [ [ "From assemblingSVK_m_file line 21", "1#F143N6:B275" ] ],
+ scall143: [  ],
+ MATLABcode145: "getStressSVK145_mcode.html",
+ fpath145: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines145: [162, 163, 171],
+ watch145: "getStressSVK145_watch.html",
+ title145: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; getStressSVK</a></span>",
+ tcall145: [ [ "From assemblingSVK_m_file > strain2Stress line 240", "214#F145N4:B1535" ] ],
+ scall145: [  ],
+ MATLABcode214: "strain2Stress214_mcode.html",
+ fpath214: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines214: [232, 234, 245],
+ watch214: "strain2Stress214_watch.html",
+ title214: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; strain2Stress</a></span>",
+ tcall214: [ [ "From assemblingSVK_m_file > localAssemblingSVK line 87", "229#F214N14:B557" ] ],
+ scall214: [ [ "From line 240 to assemblingSVK_m_file > getStressSVK", "145#srcline163" ] ],
+ MATLABcode215: "symmetrizeStrain215_mcode.html",
+ fpath215: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines215: [244, 245, 269],
+ watch215: "symmetrizeStrain215_watch.html",
+ title215: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; symmetrizeStrain</a></span>",
+ tcall215: [ [ "From assemblingSVK_m_file > localAssemblingSVK line 91", "229#F215N16:B626" ] ],
+ scall215: [  ],
+ MATLABcode228: "matrixTraceFunA228_mcode.html",
+ fpath228: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines228: [218, 220, 234],
+ watch228: "matrixTraceFunA228_watch.html",
+ title228: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; matrixTraceFunA</a></span>",
+ tcall228: [ [ "From assemblingSVK_m_file > localAssemblingSVK line 103", "229#F228N13:B661" ] ],
+ scall228: [  ],
+ MATLABcode229: "localAssemblingSVK229_mcode.html",
+ fpath229: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines229: [77, 79, 108],
+ watch229: "localAssemblingSVK229_watch.html",
+ title229: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; localAssemblingSVK</a></span>",
+ tcall229: [ [ "From assemblingSVK_m_file line 23", "1#F229N10:B287" ] ],
+ scall229: [ [ "From line 87 to assemblingSVK_m_file > strain2Stress", "214#srcline234" ], [ "From line 91 to assemblingSVK_m_file > symmetrizeStrain", "215#srcline245" ], [ "From line 103 to assemblingSVK_m_file > matrixTraceFunA", "228#srcline220" ] ],
+ MATLABcode230: "trafoDeterminant230_mcode.html",
+ fpath230: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines230: [170, 171, 184],
+ watch230: "trafoDeterminant230_watch.html",
+ title230: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; trafoDeterminant</a></span>",
+ tcall230: [ [ "From assemblingSVK_m_file > localAssemblingF line 40", "268#F230N17:B393" ] ],
+ scall230: [  ],
+ MATLABcode231: "gradientMatBaseFun231_mcode.html",
+ fpath231: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines231: [183, 184, 196],
+ watch231: "gradientMatBaseFun231_watch.html",
+ title231: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; gradientMatBaseFun</a></span>",
+ tcall231: [ [ "From assemblingSVK_m_file > localAssemblingF line 52", "268#F231N7:B453" ] ],
+ scall231: [  ],
+ MATLABcode247: "makeBlockDiag2by2247_mcode.html",
+ fpath247: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines247: [280, 281, 290],
+ watch247: "makeBlockDiag2by2247_watch.html",
+ title247: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 2</a></span>",
+ tcall247: [ [ "From assemblingSVK_m_file > localAssemblingF line 61", "268#F247N11:B491" ] ],
+ scall247: [  ],
+ MATLABcode266: "stressTranspose266_mcode.html",
+ fpath266: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines266: [195, 196, 208],
+ watch266: "stressTranspose266_watch.html",
+ title266: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; stressTranspose</a></span>",
+ tcall266: [ [ "From assemblingSVK_m_file > localAssemblingF line 67", "268#F266N15:B503" ] ],
+ scall266: [  ],
+ MATLABcode267: "matrixTraceFun267_mcode.html",
+ fpath267: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines267: [207, 208, 220],
+ watch267: "matrixTraceFun267_watch.html",
+ title267: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; matrixTraceFun</a></span>",
+ tcall267: [ [ "From assemblingSVK_m_file > localAssemblingF line 74", "268#F267N12:B515" ] ],
+ scall267: [  ],
+ MATLABcode268: "localAssemblingF268_mcode.html",
+ fpath268: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ lines268: [30, 33, 79],
+ watch268: "localAssemblingF268_watch.html",
+ title268: "Function: <span class='functionname'><a title='/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m' class='functionlink' href=\"matlab: open('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m')\">assemblingSVK_m_file &gt; localAssemblingF</a></span>",
+ tcall268: [ [ "From assemblingSVK_m_file line 24", "1#F268N9:B315" ] ],
+ scall268: [ [ "From line 40 to assemblingSVK_m_file > trafoDeterminant", "230#srcline171" ], [ "From line 52 to assemblingSVK_m_file > gradientMatBaseFun", "231#srcline184" ], [ "From line 61 to assemblingSVK_m_file > makeBlockDiag2by2 > 2", "247#srcline281" ], [ "From line 67 to assemblingSVK_m_file > stressTranspose", "266#srcline196" ], [ "From line 74 to assemblingSVK_m_file > matrixTraceFun", "267#srcline208" ] ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/assemblingSVK_m_file.m",
+ fpath2: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/ops/mtimes.m",
+ fpath3: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_scalexp_compatible.m",
+ fpath4: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_div.m",
+ fpath5: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath6: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath7: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath8: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_assert_valid_size_arg.m",
+ fpath9: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_index_class.m",
+ fpath10: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath11: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_is_float_class.m",
+ fpath12: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_scalar_eg.m",
+ fpath13: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_scalexp_alloc.m",
+ fpath14: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_min_or_max.m",
+ fpath15: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/datafun/min.m",
+ fpath16: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath17: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/eye.m",
+ fpath18: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elfun/eml_scalar_abs.m",
+ fpath19: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elfun/abs.m",
+ fpath20: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_xcabs1.m",
+ fpath21: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_warning.m",
+ fpath22: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_lusolve.m",
+ fpath23: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/ops/mldivide.p",
+ fpath24: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_blas_inline.m",
+ fpath25: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_use_refblas.m",
+ fpath26: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_threshold.m",
+ fpath27: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_xgemm.m",
+ fpath28: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_index_minus.m",
+ fpath29: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_index_times.m",
+ fpath30: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_index_plus.m",
+ fpath31: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath32: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/refblas/eml_refblas_xgemm.m",
+ fpath33: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_int.m",
+ fpath34: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_size_ptr.m",
+ fpath35: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_c_cast.m",
+ fpath36: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_xgemm.m",
+ fpath37: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/length.m",
+ fpath38: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/diag.m",
+ fpath39: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_isequal_core.m",
+ fpath40: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/isequal.m",
+ fpath41: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_const_nonsingleton_dim.m",
+ fpath42: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath43: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_size_prod.m",
+ fpath44: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_matrix_vstride.m",
+ fpath45: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_matrix_npages.m",
+ fpath46: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/matfun/trace.m",
+ fpath47: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_float_model.m",
+ fpath48: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_realmin.m",
+ fpath49: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/realmin.m",
+ fpath50: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_eps.m",
+ fpath51: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/eps.m",
+ fpath52: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elfun/eml_scalar_floor.m",
+ fpath53: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elfun/floor.m",
+ fpath54: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/ops/colon.m",
+ fpath55: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_isa_uint.m",
+ fpath56: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_unsigned_class.m",
+ fpath57: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_ixamax.m",
+ fpath58: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/refblas/eml_refblas_ixamax.m",
+ fpath59: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_ixamax.m",
+ fpath60: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_xswap.m",
+ fpath61: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/refblas/eml_refblas_xswap.m",
+ fpath62: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_xswap.m",
+ fpath63: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/external/eml_blas_xger.m",
+ fpath64: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/refblas/eml_refblas_xgerx.m",
+ fpath65: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/refblas/eml_refblas_xger.m",
+ fpath66: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_xger.m",
+ fpath67: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/blas/eml_xgeru.m",
+ fpath68: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/lapack/matlab/eml_matlab_zgetrf.m",
+ fpath69: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/lapack/internal/eml_lapack_xgetrf.m",
+ fpath70: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/lapack/eml_xgetrf.m",
+ fpath71: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/matfun/det.m",
+ fpath72: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath73: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/eml/eml_index_prod.m",
+ fpath74: "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/eml/lib/matlab/elmat/repmat.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1 50 51 130 143 145 214 215 228 229 230 231 247 266 267 268">1 x 1</option>
+<option value="50 143 228 230 231 266 267">1 x 2</option>
+<option value="1 229 268">1 x <b>:</b>7</option>
+<option value="1 267 268">1 x <b>:</b>?</option>
+<option value="50 51 130 143 145 214 215 229 230 231 268">2 x 2</option>
+<option value="1 130 143 229 247 266 268">2 x <b>:</b>14</option>
+<option value="1">2 x <b>:</b>7</option>
+<option value="1 215 231 267 268">2 x <b>:</b>?</option>
+<option value="1">3 x <b>:</b>7 x 2</option>
+<option value="1">3 x <b>:</b>?</option>
+<option value="130">4 x 4</option>
+<option value="1 130">6 x 1</option>
+<option value="247 268"><b>:</b>14 x <b>:</b>14</option>
+<option value="1 229 268"><b>:</b>14 x <b>:</b>?</option>
+<option value="1"><b>:</b>? x 1</option>
+<option value="1 130 214"><b>:</b>? x 2</option>
+<option value="1 6"><b>:</b>? x 3</option>
+<option value="1 6"><b>:</b>? x 6</option>
+<option value="1 130 229"><b>:</b>? x <b>:</b>14</option>
+<option value="1 228 229"><b>:</b>? x <b>:</b>?</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1 6 50 51 130 143 145 214 215 228 229 230 231 247 266 267 268">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1 6 50 51 130 143 145 214 215 228 229 230 231 247 266 267 268">double</option>
+<option value="1">struct</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn" id="F1N2:F1">assemblingSVK_m_file</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F6N3:F2">assemblingSVK_m_file &gt; getGlobalPositions</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F145N4:F3">assemblingSVK_m_file &gt; getStressSVK</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F130N5:F4">assemblingSVK_m_file &gt; giveGradient</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F143N6:F5">assemblingSVK_m_file &gt; giveSigma</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F231N7:F6">assemblingSVK_m_file &gt; gradientMatBaseFun</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F50N8:F7">assemblingSVK_m_file &gt; invertBlock2by2</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F268N9:F8">assemblingSVK_m_file &gt; localAssemblingF</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F229N10:F9">assemblingSVK_m_file &gt; localAssemblingSVK</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F51N11:F10">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 1</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F247N11:F11">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 2</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F267N12:F12">assemblingSVK_m_file &gt; matrixTraceFun</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F228N13:F13">assemblingSVK_m_file &gt; matrixTraceFunA</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F214N14:F14">assemblingSVK_m_file &gt; strain2Stress</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F266N15:F15">assemblingSVK_m_file &gt; stressTranspose</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F215N16:F16">assemblingSVK_m_file &gt; symmetrizeStrain</a></li>
+<li class="leaf  passed"><a href="#" class="fcn" id="F230N17:F17">assemblingSVK_m_file &gt; trafoDeterminant</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="node collapsed passed"><a href="#" class="fcn" id="F1N2:L1">assemblingSVK_m_file</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F6N3:L2">assemblingSVK_m_file &gt; getGlobalPositions</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F130N5:L3">assemblingSVK_m_file &gt; giveGradient</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F143N6:L4">assemblingSVK_m_file &gt; giveSigma</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F229N10:L5">assemblingSVK_m_file &gt; localAssemblingSVK</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F268N9:L6">assemblingSVK_m_file &gt; localAssemblingF</a></li>
+</ul>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="node collapsed passed"><a href="#" class="fcn" id="F1N2:l1">assemblingSVK_m_file</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F6N3:l2">assemblingSVK_m_file &gt; getGlobalPositions</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F130N5:l3">assemblingSVK_m_file &gt; giveGradient</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F143N6:l4">assemblingSVK_m_file &gt; giveSigma</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F229N10:l5">assemblingSVK_m_file &gt; localAssemblingSVK</a></li>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F268N9:l6">assemblingSVK_m_file &gt; localAssemblingF</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode6">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F6N3:l7">assemblingSVK_m_file &gt; getGlobalPositions</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode50">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F50N8:l8">assemblingSVK_m_file &gt; invertBlock2by2</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode51">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F51N11:l9">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 1</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode130">
+
+<li class="node collapsed passed"><a href="#" class="fcn" id="F130N5:l10">assemblingSVK_m_file &gt; giveGradient</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F50N8:l11">assemblingSVK_m_file &gt; invertBlock2by2</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F51N11:l12">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 1</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode143">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F143N6:l13">assemblingSVK_m_file &gt; giveSigma</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode145">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F145N4:l14">assemblingSVK_m_file &gt; getStressSVK</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode214">
+
+<li class="node collapsed passed"><a href="#" class="fcn" id="F214N14:l15">assemblingSVK_m_file &gt; strain2Stress</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F145N4:l16">assemblingSVK_m_file &gt; getStressSVK</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode215">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F215N16:l17">assemblingSVK_m_file &gt; symmetrizeStrain</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode228">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F228N13:l18">assemblingSVK_m_file &gt; matrixTraceFunA</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode229">
+
+<li class="node collapsed passed"><a href="#" class="fcn" id="F229N10:l19">assemblingSVK_m_file &gt; localAssemblingSVK</a>
+<ul>
+<li class="node collapsed passed"><a href="#" class="fcn" id="F214N14:l20">assemblingSVK_m_file &gt; strain2Stress</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F215N16:l21">assemblingSVK_m_file &gt; symmetrizeStrain</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F228N13:l22">assemblingSVK_m_file &gt; matrixTraceFunA</a></li>
+</ul>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode230">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F230N17:l23">assemblingSVK_m_file &gt; trafoDeterminant</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode231">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F231N7:l24">assemblingSVK_m_file &gt; gradientMatBaseFun</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode247">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F247N11:l25">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 2</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode266">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F266N15:l26">assemblingSVK_m_file &gt; stressTranspose</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode267">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F267N12:l27">assemblingSVK_m_file &gt; matrixTraceFun</a>
+</li>
+</ol>
+<ol class="callstacknode" id="callstacknode268">
+
+<li class="node collapsed passed"><a href="#" class="fcn" id="F268N9:l28">assemblingSVK_m_file &gt; localAssemblingF</a>
+<ul>
+<li class="leaf passed"><a href="#" class="fcn" id="F230N17:l29">assemblingSVK_m_file &gt; trafoDeterminant</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F231N7:l30">assemblingSVK_m_file &gt; gradientMatBaseFun</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F247N11:l31">assemblingSVK_m_file &gt; makeBlockDiag2by2 &gt; 2</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F266N15:l32">assemblingSVK_m_file &gt; stressTranspose</a></li>
+<li class="leaf passed"><a href="#" class="fcn" id="F267N12:l33">assemblingSVK_m_file &gt; matrixTraceFun</a></li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="assemblingSVK_m_file_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_api_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_api.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_api_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_api.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_data_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_data.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_data_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_data.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_emxutil_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_emxutil.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_emxutil_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_emxutil.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_initialize_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_initialize.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_initialize_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_initialize.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_mex_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_mex.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_mexutil_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_mexutil.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_mexutil_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_mexutil.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_terminate_c.html"><td class="ccode"><a href="#">assemblingSVK_m_file_terminate.c</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_terminate_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_terminate.h</a></td></tr>
+<tr class="ccode" id="assemblingSVK_m_file_types_h.html"><td class="ccode"><a href="#">assemblingSVK_m_file_types.h</a></td></tr>
+<tr class="ccode" id="det_c.html"><td class="ccode"><a href="#">det.c</a></td></tr>
+<tr class="ccode" id="det_h.html"><td class="ccode"><a href="#">det.h</a></td></tr>
+<tr class="ccode" id="mldivide_c.html"><td class="ccode"><a href="#">mldivide.c</a></td></tr>
+<tr class="ccode" id="mldivide_h.html"><td class="ccode"><a href="#">mldivide.h</a></td></tr>
+<tr class="ccode" id="repmat_c.html"><td class="ccode"><a href="#">repmat.c</a></td></tr>
+<tr class="ccode" id="repmat_h.html"><td class="ccode"><a href="#">repmat.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+<tr class="ccode" id="sum_c.html"><td class="ccode"><a href="#">sum.c</a></td></tr>
+<tr class="ccode" id="sum_h.html"><td class="ccode"><a href="#">sum.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 3</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>2 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>2 x <b>:</b>7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>3 x <b>:</b>7 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>3 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>6 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>2 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 7</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x 8</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 9</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 10</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.opaque</td></tr></table></div>
+<div class="tooltip" id="TT32"><table class="tooltip"><tr><th>Size</th><td>4 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT33"><table class="tooltip"><tr><th>Size</th><td>4 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT34"><table class="tooltip"><tr><th>Size</th><td>4 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT35"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT36"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT37"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>struct</td></tr></table></div>
+<div class="tooltip" id="TT38"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>7</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT39"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT40"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT41"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT42"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT43"><table class="tooltip"><tr><th>Size</th><td><b>:</b>14 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT44"><table class="tooltip"><tr><th>Size</th><td><b>:</b>? x <b>:</b>14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT45"><table class="tooltip"><tr><th>Size</th><td>2 x <b>:</b>14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT46"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT47"><table class="tooltip"><tr><th>Size</th><td><b>:</b>14 x <b>:</b>14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT48"><table class="tooltip"><tr><th>Size</th><td>2 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT49"><table class="tooltip"><tr><th>Size</th><td>2 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT50"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT51"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT52"><table class="tooltip"><tr><th>Size</th><td>6 x 6</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT53"><table class="tooltip"><tr><th>Size</th><td>1 x 27</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT54"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT55"><table class="tooltip"><tr><th>Size</th><td>1 x 45</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT56"><table class="tooltip"><tr><th>Size</th><td>1 x 21</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT57"><table class="tooltip"><tr><th>Size</th><td>1 x 34</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT58"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT59"><table class="tooltip"><tr><th>Size</th><td>1 x 36</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT60"><table class="tooltip"><tr><th>Size</th><td>4 x <b>:</b>14</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT61"><table class="tooltip"><tr><th>Size</th><td>1 x 28</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+</div>
+</div>
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (0)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>14-Jun-2015 18:03:07</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<div>
+<div class="msgsuccess">Code generation successful. Click here to <a href="javaScript:selectSummaryTab();">view summary</a>.</div>
+</div>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file')">/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">sh assemblingSVK_m_file_mex.sh</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_mexutil.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_data.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_initialize.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_terminate.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "mldivide.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "sum.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "det.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "repmat.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_api.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_emxutil.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DNO_TIMER -DREDUCED -DCDT_ONLY -DTRILIBRARY -DANSI_DECLARATORS -DMX_COMPAT_32  -O -DNDEBUG  -I "/home/ksimon/Software/Matlab/matlabR2013a/simulink/include" -I "/home/ksimon/Software/Matlab/matlabR2013a/toolbox/shared/simtargets" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/ext_mode/common" -I "/home/ksimon/Software/Matlab/matlabR2013a/rtw/c/src/ext_mode/common" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix" -I "/home/ksimon/Code/ISSI/Assembly/StiffnessMatrix/codegen/mex/assemblingSVK_m_file" -I "/home/ksimon/Software/Matlab/matlabR2013a/extern/include" "assemblingSVK_m_file_mex.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">gcc -Wl,--version-script,assemblingSVK_m_file_mex_mex.map -pthread -shared -Wl,--no-undefined   -O -o assemblingSVK_m_file_mex.mexa64  assemblingSVK_m_file_mexutil.o assemblingSVK_m_file_data.o assemblingSVK_m_file_initialize.o assemblingSVK_m_file_terminate.o assemblingSVK_m_file.o mldivide.o sum.o det.o repmat.o assemblingSVK_m_file_api.o assemblingSVK_m_file_emxutil.o assemblingSVK_m_file_mex.o  -Wl,-rpath-link,/home/ksimon/Software/Matlab/matlabR2013a/bin/glnxa64 -L/home/ksimon/Software/Matlab/matlabR2013a/bin/glnxa64 -lmx -lmex -lmat -lm -lstdc++ -lemlrt -lut -lmwmathutil -lmwblas</span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>
